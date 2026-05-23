@@ -834,13 +834,19 @@ h1, h2, h3, h4, p {
     border-radius: var(--radius-md);
     background: var(--surface-gray);
   }
-  .nav-menu-cta {
+  .nav-links a.nav-menu-cta {
     display: flex;
     justify-content: center;
     margin-top: 0.25rem;
     background: var(--accent-primary);
     color: white !important;
     font-weight: 700;
+    box-shadow: var(--shadow-sm);
+  }
+  .nav-links a.nav-menu-cta:hover,
+  .nav-links a.nav-menu-cta.active {
+    background: var(--accent-hover);
+    color: white !important;
   }
   .nav-links a:hover,
   .nav-links a.active {
