@@ -1,0 +1,21 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1C56D8"/>
+      <stop offset="1" stop-color="#83CBFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#g3)"/>
+  <circle cx="1100" cy="640" r="210" fill="#ffffff" fill-opacity="0.14"/>
+  <rect x="120" y="120" width="960" height="520" rx="30" fill="#FFFFFF" fill-opacity="0.9"/>
+  <rect x="170" y="180" width="330" height="30" rx="15" fill="#D8E9FF"/>
+  <rect x="170" y="230" width="450" height="16" rx="8" fill="#E5F0FF"/>
+  <rect x="170" y="270" width="860" height="1" fill="#CADFFF"/>
+  <rect x="170" y="305" width="260" height="280" rx="20" fill="#EEF6FF"/>
+  <rect x="450" y="305" width="280" height="280" rx="20" fill="#D9E9FF"/>
+  <rect x="750" y="305" width="280" height="280" rx="20" fill="#EEF6FF"/>
+  <polyline points="215,515 290,445 365,470" stroke="#2A6FE5" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <polyline points="495,520 570,430 645,470" stroke="#2A6FE5" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <polyline points="795,520 870,395 945,460" stroke="#2A6FE5" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <text x="170" y="580" font-family="Segoe UI, Arial, sans-serif" font-size="33" fill="#1A4999">Innovation Workspace</text>
+</svg>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Research Labs | Partner With Us</title>
+  <meta name="description" content="Contact Nova Research Labs for biomedical research collaborations, dataset access, and institutional consulting." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    /* Specific forms styling can be isolated here if needed, but we rely on styles.css */
+    .form-wrapper {
+      background: var(--surface-white);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow-xl);
+      text-align: left;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .form-control {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      background: var(--bg-main);
+      transition: all var(--ease);
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--accent-primary);
+      background: var(--surface-white);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+    .contact-info-list {
+      list-style: none;
+      margin-top: 2rem;
+      padding-left: 0;
+    }
+    .contact-info-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      text-align: left;
+      justify-content: flex-start;
+    }
+    .contact-info-item svg {
+      color: var(--accent-primary);
+      flex-shrink: 0;
+    }
+    .contact-info-text {
+      text-align: left;
+    }
+    .contact-info-text h4 {
+      font-size: 1rem;
+      margin-bottom: 0.25rem;
+      color: var(--text-primary);
+    }
+    .contact-info-text p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    
+    @media (max-width: 1024px) {
+      .contact-sidebar {
+        text-align: left;
+        background: var(--surface-white);
+        padding: 2rem;
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border-light);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <span>Nova Research Labs</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#team">Team</a>
+        <a href="about.html">About</a>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Partner With Us</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="hero section-bg-dark" style="padding-bottom: 4rem; background: var(--bg-dark); color: white; border-bottom: 1px solid var(--border-dark);">
+      <div class="container">
+        <div class="section-header text-center" style="max-width: 800px;">
+          <span class="section-tag" style="background: rgba(37,99,235,0.1); border-color: rgba(37,99,235,0.3); color: #60a5fa;">Partner With Us</span>
+          <h1 class="hero-title-style" style="color: var(--surface-white);">
+            Let's discuss your next <span class="text-gradient">scientific initiative</span>
+          </h1>
+          <p class="section-desc" style="color: var(--text-light);">
+            Share a quick overview of your goals, datasets, or constraints. We'll reach out with a practical way to collaborate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container hero-grid" style="align-items: start;">
+        
+        <!-- Form Column -->
+        <div class="form-wrapper">
+          <h2 class="section-title" style="font-size: 1.75rem; margin-bottom: 2rem;">Send us a secure inquiry</h2>
+          <form action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="hidden" name="_subject" value="New inquiry from Nova Research Labs website" />
+            
+            <div id="contact-form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" id="firstName" name="firstName" class="form-control" required />
+              </div>
+              <div class="form-group" style="margin-bottom: 0;">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" required />
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 1.5rem;">
+              <label for="email" class="form-label">Institutional Email</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="name@university.edu" required />
+            </div>
+
+            <div class="form-group">
+              <label for="organization" class="form-label">Organization / Lab</label>
+              <input type="text" id="organization" name="organization" class="form-control" />
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryType" class="form-label">Inquiry Type</label>
+              <select id="inquiryType" name="inquiryType" class="form-control">
+                <option value="Research Collaboration">Research Collaboration</option>
+                <option value="Dataset Access">Dataset Access</option>
+                <option value="Facility Usage">Facility Usage</option>
+                <option value="Careers/PhD">Careers / PhD Track</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Project Details</label>
+              <textarea id="message" name="message" class="form-control" placeholder="Please provide an overview of your research framework and computing needs..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <!-- Sidebar Direct Contact -->
+        <div class="contact-sidebar" style="background: var(--surface-white); padding: 2.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); text-align: left; display: block;">
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; color: var(--text-primary);">Direct Channels</h3>
+          
+          <ul class="contact-info-list" style="margin-top: 0;">
+            <li class="contact-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2" ry="2"></rect><path d="M16 2v4"></path><path d="M8 2v4"></path><path d="M3 10h18"></path></svg>
+              <div class="contact-info-text">
+                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.15rem;">General Inquiries</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">hello@novaresearch.io</p>
+              </div>
+            </li>
+            <li class="contact-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h4l2-2h4l2 2h8"></path><path d="M22 6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6z"></path></svg>
+              <div class="contact-info-text">
+                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.15rem;">Press & Media</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary);">media@novaresearch.io</p>
+              </div>
+            </li>
+            <li class="contact-info-item" style="margin-bottom: 0;">
+              <!-- Location pin icon -->
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div class="contact-info-text">
+                <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.15rem;">Institute Address</h4>
+                <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.4;">77 Mass Ave<br/>Cambridge, MA 02139</p>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Nova Research Labs</span>
+          </a>
+          <p>Located at the intersection of computational engineering and biomedical discovery.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Research</h4>
+          <div class="footer-links">
+            <a href="index.html#publications">Publications</a>
+            <a href="research.html">Open Datasets</a>
+            <a href="projects.html">GitHub Models</a>
+            <a href="research.html">Lab Equipment</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Institute</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="index.html#team">Our Team</a>
+            <a href="contact.html">Careers / PhD</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>&copy; <span id="year">2026</span> Nova Research Labs. All rights reserved.</span>
+        <span>A fictitious laboratory for demonstration.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

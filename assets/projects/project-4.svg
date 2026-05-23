@@ -1,0 +1,19 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1355C8"/>
+      <stop offset="1" stop-color="#79C8FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#g4)"/>
+  <rect x="100" y="100" width="1000" height="560" rx="34" fill="#FFFFFF" fill-opacity="0.92"/>
+  <rect x="155" y="165" width="300" height="28" rx="14" fill="#D8E9FF"/>
+  <rect x="155" y="212" width="430" height="14" rx="7" fill="#E8F2FF"/>
+  <rect x="155" y="250" width="890" height="1" fill="#CDDEFB"/>
+  <rect x="155" y="295" width="420" height="320" rx="20" fill="#EEF5FF"/>
+  <rect x="595" y="295" width="450" height="140" rx="20" fill="#DCEBFF"/>
+  <rect x="595" y="452" width="450" height="163" rx="20" fill="#EEF5FF"/>
+  <circle cx="920" cy="365" r="38" fill="#2F8DFF" fill-opacity="0.22"/>
+  <circle cx="980" cy="365" r="38" fill="#2F8DFF" fill-opacity="0.28"/>
+  <text x="155" y="585" font-family="Segoe UI, Arial, sans-serif" font-size="33" fill="#1A4D9F">Research Operations</text>
+</svg>

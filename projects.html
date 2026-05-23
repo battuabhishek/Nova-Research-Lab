@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Research Labs | Projects & Models</title>
+  <meta name="description" content="View featured scientific biomedical projects and open-source GitHub models deployed by Nova Research Labs." />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <style>
+    .project-card {
+      background: var(--surface-white);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all var(--ease);
+      display: flex;
+      flex-direction: column;
+    }
+    .project-card:hover {
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-4px);
+    }
+    .project-banner {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .project-body {
+      padding: 2rem;
+      flex: 1;
+    }
+    .project-body h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+    .project-body p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .github-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      background: var(--bg-secondary);
+    }
+    .github-btn:hover {
+      background: var(--surface-gray);
+      border-color: var(--text-primary);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <span>Nova Research Labs</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Research</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#team">Team</a>
+        <a href="about.html">About</a>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Partner With Us</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="hero" style="padding-bottom: 3rem;">
+      <div class="container">
+        <div class="section-header text-center" style="max-width: 800px;">
+          <span class="section-tag">Engineering</span>
+          <h1 class="hero-title-style">
+            Core Projects &amp; <span class="text-gradient">GitHub Models</span>
+          </h1>
+          <p class="section-desc">
+            We actively open-source our machine learning architectures, statistical tooling, and biomolecular simulation engines to accelerate discovery.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Models Grid -->
+    <section class="section section-bg-light" id="github-models">
+      <div class="container">
+        <div class="grid-3">
+          
+          <div class="project-card">
+            <img class="project-banner" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80" alt="Code lines and algorithmic visualization" />
+            <div class="project-body">
+              <h3>NovaFold v2.4 (PyTorch)</h3>
+              <p>The core graph neural network model powering our protein structure predictions. This repository contains the training loops, inference scripts, and pre-trained weights.</p>
+              <a href="#" class="github-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img class="project-banner" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Data streams on monitors" />
+            <div class="project-body">
+              <h3>Bayesian Epidemic Tracker</h3>
+              <p>An optimized C++ and Python library for generating spatial Monte Carlo simulations of viral spread based on partial epidemiological reports.</p>
+              <a href="#" class="github-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img class="project-banner" src="https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&w=800&q=80" alt="Scientific arrays" />
+            <div class="project-body">
+              <h3>AutoScope Imaging Pipeline</h3>
+              <p>A few-shot segmentation toolkit designed to automatically flag anomalies in multi-channel TIFF fluorescent microscopic imagery.</p>
+              <a href="#" class="github-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <span>Nova Research Labs</span>
+          </a>
+          <p>Located at the intersection of computational engineering and biomedical discovery.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Research</h4>
+          <div class="footer-links">
+            <a href="index.html#publications">Publications</a>
+            <a href="research.html">Open Datasets</a>
+            <a href="projects.html">GitHub Models</a>
+            <a href="research.html">Lab Equipment</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Institute</h4>
+          <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="index.html#team">Our Team</a>
+            <a href="contact.html">Careers / PhD</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>&copy; <span id="year">2026</span> Nova Research Labs. All rights reserved.</span>
+        <span>A fictitious laboratory for demonstration.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
